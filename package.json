@@ -1,0 +1,37 @@
+{
+  "name": "sistem_inventario_wed",
+  "version": "1.0.0",
+  "description": "este es la wed de el sistema de codigo de barras quiere decir que es para le inventario",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src --out-dir dist && copyfiles -u 1 src/**/* dist",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gian carlos giraldo",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "smb2": "^0.2.11",
+    "url": "^0.11.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/node": "^7.26.0",
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "copyfiles": "^2.4.1",
+    "ejs-lint": "^2.0.1",
+    "nodemon": "^3.1.7"
+  }
+}

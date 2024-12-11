@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Productos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Diseño PC</h2>
+        <div class="form-group">
+            <label for="pareja">Pareja:</label>
+            <select id="pareja" name="pareja">
+                <option value="pareja1">pareja1</option>
+                <option value="pareja2">pareja2</option>
+                <option value="pareja3">pareja3</option>
+                <option value="pareja4">pareja4</option>
+                <option value="pareja5">pareja5</option>
+                <option value="pareja6">pareja6</option>
+                <option value="pareja7">pareja7</option>
+                <option value="pareja8">pareja8</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="zona">Zona:</label>
+            <select id="zona" name="zona">
+                <option value="Laboratorio">Laboratorio</option>
+                <option value="Terceros">Terceros</option>
+                <option value="Oficina">Oficina</option>
+                <option value="MezaniA">MezaniA</option>
+                <option value="MezaniB">MezaniB</option>
+                <option value="Estanteria_lado_A">Estantería lado A</option>
+                <option value="Estanteria_lado_B">Estantería lado B</option>
+                <option value="Estanteria_lado_C">Estantería lado C</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="conteo">Conteo:</label>
+            <input type="text" id="conteo" name="conteo">
+        </div>
+        <div class="form-group">
+            <label for="codigo">Código de barras:</label>
+            <input type="text" id="codigo" name="codigo">
+        </div>
+        <div class="buttons">
+            <button id="exportar">Exportar a Excel</button>
+            <button id="eliminar">Eliminar Producto</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pareja</th>
+                    <th>Zona</th>
+                    <th>Código</th>
+                    <th>Fecha</th>
+                    <th>Talla</th>
+                    <th>Cantidad</th>
+                    <th>Conteo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí podrías pasar los datos dinámicamente si es necesario -->
+            </tbody>
+        </table>
+        <div class="footer">
+            Productos registrados: 0
+        </div>
+    </div>
+</body>
+</html>
